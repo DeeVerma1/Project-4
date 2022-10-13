@@ -16,10 +16,6 @@ Inspiration for several prompts came from [Data is Plural](https://tinyletter.co
 
 ## Prompts
 
-### Aviation Accidents
-
-The National Transportation Safety Board (NTSB) [tracks](https://www.ntsb.gov/_layouts/ntsb.aviation/index.aspx) all civilian aviation accidents (and "incidents") going back to 1962.
-
 ### Center for Disease Control
 
 The Center for Disease Control has several datasets:
@@ -27,65 +23,7 @@ The Center for Disease Control has several datasets:
 - [Smoking and Tobacco Use](https://data.cdc.gov/browse?category=Smoking+%26+Tobacco+Use)
 - [COVID-19](https://data.cdc.gov/browse?tags=covid-19)
 
-### Economic Data
 
-If you're interested in a project focused on the economy, the Bureau of Labor Statistics (BLS) has [several datasets](https://www.bls.gov/data/) ranging from employment to inflation.
-
-### Voter Fraud (or lack thereof)
-The Brookings Institute had an [interesting article](https://www.brookings.edu/blog/fixgov/2020/06/02/low-rates-of-fraud-in-vote-by-mail-states-show-the-benefits-outweigh-the-risks/) on voter fraud. Although no datasets are provided, there are several links to sources where you might be able to find some.
-
-### Incarceration
-
-The United States Sentencing Commission (USSC) has [data](https://www.ussc.gov/research/datafiles/commission-datafiles) on federal sentencing going back to 2002.
-
-### Environment
-
-The EPA has data on [air quality](https://cfpub.epa.gov/airnow/index.cfm?action=airnow.main), [precipitation](https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid={BDD5DD12-4942-41A6-B47D-9C2459F28A0A}), [stream flows](https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid={0599E344-4682-479D-9334-78FE576E2881}) [and more](https://edg.epa.gov/metadata/catalog/main/home.page).
-
-### Protests
-
-[The Mass Mobilization Project](https://massmobilization.github.io/) provides data on demonstrations worldwide, as well as the government responses.
-
-### Charity
-
-[Data.world](https://data.world/datasets/charity) has several datasets related to altruism: donations, organizations, and volunteerism. 
-
-### CTE
-
-Chronic Traumatic Encephalopathy (CTE) is a horrific brain disease, and occurs [frequently](http://www.bu.edu/articles/2017/cte-former-nfl-players/) in former NFL players. Gathering the data will take some work, but here are some starter links.
-- [Kaggle](https://www.kaggle.com/jpmiller/nfl-competition-data)
-- [Twelve Years of National Football League Concussion Data](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3438866/)
-
-### Politics
-FiveThiryEight is a great news and commentary site for all things data. Their main foci are sports and politics. If you're interested in polling data, check out the "Data" links in the footer on [this page](https://projects.fivethirtyeight.com/2020-election-forecast/).
-
-### Consumer Complaints
-
-The Consumer Financial Protection Bureau maintains a [dataset](https://www.consumerfinance.gov/data-research/consumer-complaints/) on customer complaints to various financial organizations in the US.
-
-### Professional Athletes
-
-For this prompt, choose a professional sport and compare the distribution of birth months vs the US population. [Sports Reference](https://www.sports-reference.com/) is a good resource for men's and women's sports.
-
-h/t [Malcolm Gladwell](https://youtu.be/kspphGOjApk?t=148)
-
-### SEC
-
-The Securities and Exchange Commission (SEC) is the go-to for [financial data](https://www.sec.gov/edgar/searchedgar/companysearch.html) on US publicly traded companies. The also have [press releases](https://www.sec.gov/litigation/litreleases.shtml) that pertain to various violations.
-
-### US Treasury
-
-The US Treasury Department has several datasets related to public debt. The [yield curve](https://www.treasury.gov/resource-center/data-chart-center/interest-rates/pages/textview.aspx?data=yield) is a key indicator of economic health. They also maintain data on the sale of [securities](https://www.treasurydirect.gov/instit/annceresult/annceresult.htm).
-
-They also have [auction data](https://home.treasury.gov/services/treasury-auctions) for items that are seized by the IRS.
-
-### Federal Reserve
-
-The Fed has a wide variety of [datasets](https://www.federalreserve.gov/datadownload/) related to the economy and financial markets.
-
-### Still stuck?
-
-Check out [/r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/), [Data.world](https://data.world/) and [Kaggle](https://www.kaggle.com/datasets) for inspiration.
 
 ## Requirements
 This project will be hosted on **GitHib**, not just GA's GitHub Enterprise, so it will be a public project for your portfolio and will add to your github activity.  For the purposes of a DSI project, you must meet a few technical requirements. They are:
