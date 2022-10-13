@@ -8,23 +8,6 @@ The prompts are there to help jump-start your ideation process. If you would lik
 
 Remember to start with a good problem statement!
 
-## The Data
-
-Some prompts have links to data sources, some don't. It's your responsibility to gather and clean your data. For most projects, this will be the bulk of your work.  Start early!
-
-Inspiration for several prompts came from [Data is Plural](https://tinyletter.com/data-is-plural).
-
-## Prompts
-
-### Center for Disease Control
-
-The Center for Disease Control has several datasets:
-- [Vaccinations](https://data.cdc.gov/browse?category=Vaccinations)
-- [Smoking and Tobacco Use](https://data.cdc.gov/browse?category=Smoking+%26+Tobacco+Use)
-- [COVID-19](https://data.cdc.gov/browse?tags=covid-19)
-
-
-
 ## Requirements
 This project will be hosted on **GitHib**, not just GA's GitHub Enterprise, so it will be a public project for your portfolio and will add to your github activity.  For the purposes of a DSI project, you must meet a few technical requirements. They are:
 1)  A `README.md` file in your project repo. Note that `README` files are automatically rendered by GitHub when you view a repo. Your README should contain:
