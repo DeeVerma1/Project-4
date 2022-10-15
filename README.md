@@ -24,3 +24,6 @@ This project uses xxx dataset for the analysis:
     This dataset includes entries for xxx
     source: https://data.cdc.gov/Vaccinations/COVID-19-Vaccination-Trends-in-the-United-States-N/rh2h-3yt2
    
+* [`covid_cases_deaths_by_state_over_time.csv`](./data/United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv):  
+    This dataset includes entries for xxx
+    source: https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36
