@@ -25,7 +25,7 @@ This project also aims to use LR models to make some predictions and inferences,
 ## Data Acquisition
 
 We used the following COVID-19 datasets from the Centers for Disease Control and Prevention (CDC) for our analysis:
-* [`covid_surveillance.csv`](./data/covid_surveillance.csv):  
+* [`covid_surveillance.csv`](./data/covid_surveillance.csv):  (link to a data dictionary.txt)
     This dataset includes entries for xxx
     source: https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4
 
