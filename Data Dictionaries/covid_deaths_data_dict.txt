@@ -1,0 +1,20 @@
+RangeIndex: 59640 entries, 0 to 59639
+Data columns (total 15 columns):
+ #   Column           Non-Null Count  Dtype   Description
+---  ------           --------------  -----   -----------
+ 0   submission_date  59640 non-null  object  Date of counts
+ 1   state            59640 non-null  object  State/territory
+ 2   tot_cases        59640 non-null  object  Total number of cases
+ 3   conf_cases       33775 non-null  object  Total confirmed cases
+ 4   prob_cases       33703 non-null  object  Total probable cases
+ 5   new_case         59640 non-null  object  Number of new cases
+ 6   pnew_case        56114 non-null  object  Number of new probable cases
+ 7   tot_death        59640 non-null  object  Total number of deaths
+ 8   conf_death       33028 non-null  object  Total number of confirmed deaths
+ 9   prob_death       33028 non-null  object  Total number of probable deaths
+ 10  new_death        59640 non-null  object  Number of new deaths
+ 11  pnew_death       56146 non-null  object  Number of new probable deaths
+ 12  created_at       59640 non-null  object  Date and time record was created
+ 13  consent_cases    49695 non-null  object  If Agree, confirmed/probable cases included. If Not, only tot. cases included
+ 14  consent_deaths   50694 non-null  object  If Agree, confirmed/probable deaths included. If Not, only tot. deaths included
+dtypes: object(15)
