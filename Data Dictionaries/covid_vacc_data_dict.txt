@@ -1,0 +1,30 @@
+RangeIndex: 74160 entries, 0 to 74159
+Data columns (total 25 columns):
+ #   Column                                       Non-Null Count  Dtype   Description
+---  ------                                       --------------  -----   -----------
+ 0   Date                                         74160 non-null  object  Date reported on CDC COVID Data Tracker
+ 1   date_type                                    74160 non-null  object  Date of administration or reported on COVID Tracker
+ 2   MMWR_week                                    74160 non-null  int64   Week of the year
+ 3   Location                                     74160 non-null  object  State/Territory/Federal Entity
+ 4   Administered_Daily                           74160 non-null  object  Total # of daily doses administered
+ 5   Administered_Cumulative                      74160 non-null  object  Cumulative # of doses administered
+ 6   Administered_7_Day_Rolling_Average           73140 non-null  object  7-day moving average of the daily doses administered
+ 7   Admin_Dose_1_Daily                           74160 non-null  object  Total number of dose 1 administered per day
+ 8   Admin_Dose_1_Cumulative                      74160 non-null  object  Cum. # of people w/ at least one dose of any vaccine
+ 9   Admin_Dose_1_Day_Rolling_Average             73140 non-null  object  7-day moving average of people with at least one dose
+ 10  Administered_Dose1_Pop_Pct                   74160 non-null  float64 Percent of population in state w/ at least one dose 
+ 11  Administered_daily_change_report             67500 non-null  object  Change between the cum. # of doses (vs. previous day)
+ 12  Administered_daily_change_report_7dayroll    66420 non-null  object  7-day moving average of the daily change
+ 13  Series_Complete_Daily                        74160 non-null  object  Daily total # of people w/ a completed primary series
+ 14  Series_Complete_Cumulative                   74160 non-null  object  Cum. total # of people w/ a completed primary series
+ 15  Series_Complete_Day_Rolling_Average          73140 non-null  object  7-day mov aver. of people w/ completed primary series
+ 16  Series_Complete_Pop_Pct                      74160 non-null  float64 Percent of people with a completed primary series
+ 17  Booster_Daily                                74160 non-null  object  Daily total # of people w/ primary series and booster
+ 18  Booster_Cumulative                           74160 non-null  object  Cum. # of people w/ primary series and booster
+ 19  Booster_7_Day_Rolling_Average                73140 non-null  object  7-day mov. aver. people w/ primary series and booster
+ 20  Additional_Doses_Vax_Pct                     74160 non-null  float64 Pct. w/ a primary series and booster
+ 21  Second_Booster_50Plus_Daily                  74160 non-null  object  Daily # of aged 50+ with a second booster dose
+ 22  Second_Booster_50Plus_Cumulative             74160 non-null  object  Cum. # of aged 50+ with a second booster dose
+ 23  Second_Booster_50Plus_7_Day_Rolling_Average  73140 non-null  object  7-day mov. aver # of aged 50+ w/ a second booster
+ 24  Second_Booster_50Plus_Vax_Pct                74160 non-null  float64 Pct. aged 50+ w/ a first and second booster dose
+dtypes: float64(4), int64(1), object(20)

@@ -1,0 +1,24 @@
+RangeIndex: 500000 entries, 0 to 499999
+Data columns (total 19 columns):
+ #   Column                    Non-Null Count   Dtype    Description
+---  ------                    --------------   -----    -----------
+ 0   case_month                500000 non-null  object   Date Received by CDC
+ 1   res_state                 500000 non-null  object   State of residence
+ 2   state_fips_code           500000 non-null  int64    State FIPS code
+ 3   res_county                499129 non-null  object   County of residence
+ 4   county_fips_code          499129 non-null  float64  County FIPS code
+ 5   age_group                 496976 non-null  object   Age group 
+ 6   sex                       492041 non-null  object   Sex [Female; Male; Other; Unknown; Missing
+ 7   race                      435252 non-null  object   Race
+ 8   ethnicity                 424302 non-null  object   Ethnicity
+ 9   case_positive_specimen    229549 non-null  float64  Weeks between earliest date and first positive specimen collection
+ 10  process                   500000 non-null  object   How the case was first identified 
+ 11  exposure_yn               500000 non-null  object   Known exposures
+ 12  current_status            500000 non-null  object   Current status of this person
+ 13  symptom_status            500000 non-null  object   Symptom status of this person
+ 14  hosp_yn                   500000 non-null  object   Was the patient hospitalized?
+ 15  icu_yn                    500000 non-null  object   Was the patient admitted to an intensive care unit?
+ 16  death_yn                  481632 non-null  object   Did the patient die as a result of this illness?
+ 17  case_onset_interval       208059 non-null  float64  Weeks between earliest date and date of symptom onset.
+ 18  underlying_conditions_yn  16482 non-null   object   Did the patient have one or more of the underlying medical conditions?
+dtypes: float64(3), int64(1), object(15)
