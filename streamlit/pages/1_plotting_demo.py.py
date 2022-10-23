@@ -9,67 +9,74 @@ import pickle
 import numpy as np
 
 
-st.set_page_config(
-    page_title="Hello!"
-)
+st.set_page_config(page_title="Hello!", layout='wide')
 
-st.title('Time Plot of COVID Case Counts')
-st.sidebar.success("Lets click!")
+st.title(' Recent COVID Cases and Vaccination Analysis')
+# st.sidebar.success("Lets click!")
+factor=st.selectbox('Look!', options=['Cases','Vaccination'])
+
+recent_cases=pd.read_csv('./pages/plotting/recent_total.csv')
+# recent_total.sort_values(by ='No. of Cases (Mean)', ascending=False, inplace=True)
+
+######################US state map#####################
+
+#Hospitalization rate visualization on country map
+# Code adapted from :
+#https://towardsdatascience.com/simplest-way-of-creating-a-choropleth-map-by-u-s-states-in-python-f359ada7735e
+#https://stackoverflow.com/questions/72481189/plotly-map-choropleth-not-plotting-anything-streamlit
+def choropleth_plot(df, title):
+    import plotly.express as px
+    US_fig = (px.choropleth(df,
+                        locations=df.iloc[:,0],
+                        locationmode="USA-states",
+                        scope="usa",
+                        color=df.iloc[:,1],
+                        color_continuous_scale="Plasma_r",
+                        # labels={'act_participation_rate': 'ACT Participation Rate'}
+                        ))
+    US_fig.update_layout(
+          title_text = title,
+          title_font_family="Times New Roman",
+          title_font_size = 14,
+          title_font_color="black",
+          title_x=0.45,
+             )
+    US_fig.show()
+    return
 
 #####################################################################
-###############No. of Cases Timeplot by state################################
-# help from https://coderzcolumn.com/tutorials/data-science/basic-dashboard-using-streamlit-and-matplotlib
 
-# st.sidebar.markdown("### Explore Time plot of Monthly Cases by state : ")
-
-df_state_hosp_total=pd.read_csv('./pages/plotting/state_hospt_total.csv')
-
-states_select=['PA', 'MI', 'NJ', 'MO', 'FL', 'LA', 'MD', 'CO', 'TX',
-       'IL', 'OH', 'WI', 'SC', 'NY', 'VA', 'NC',
-       'CA', 'IN',
-       'GA']
-
-state=st.selectbox('Select the state', options=states_select)
-
-if state:
-     fig=plt.figure(figsize=(10,4))
-     plt.plot(df_state_hosp_total['case_month'],df_state_hosp_total[state], label=state)
-     plt.title('Time plot of Monthly Cases')
-     plt.ylabel('Case count', size=12)
-     xlabel=df_state_hosp_total['case_month'].map(lambda x: str(x).rsplit('-',1))
-     plt.xticks(label= xlabel, size=10, rotation=90)
-     # plt.tick_params(labelrotation=90)
-     plt.legend()
-     plt.show()
-     st.pyplot(fig)
-     # xc
-# avg_breast_cancer_df = breast_cancer_df.groupby("target").mean()
-# bar_axis = st.sidebar.multiselect(label="Average Measures per Tumor Type Bar Chart",
-                                  # options=measurements,
-                                  # default=["mean radius","mean texture", "mean perimeter", "area error"])
-
-# if bar_axis:
-    # bar_fig = plt.figure(figsize=(6,4))
-
-    # bar_ax = bar_fig.add_subplot(111)
-
-    # sub_avg_breast_cancer_df = avg_breast_cancer_df[bar_axis]
-
-    # sub_avg_breast_cancer_df.plot.bar(alpha=0.8, ax=bar_ax, title="Average Measurements per Tumor Type");
-
-# else:
-    # bar_fig = plt.figure(figsize=(6,4))
-
-    # bar_ax = bar_fig.add_subplot(111)
-
-    # sub_avg_breast_cancer_df = avg_breast_cancer_df[["mean radius", "mean texture", "mean perimeter", "area error"]]
-
-    # sub_avg_breast_cancer_df.plot.bar(alpha=0.8, ax=bar_ax, title="Average Measurements per Tumor Type");
-#
-    #####################################################################
-
-# def load_image(image_file):
-    # img=Image.open(image_file)
+#State barh plotting#############
 
 
-#
+
+def barh_plot(y, width, title, xlabel, ylabel):
+    # figure, ax=plt.subplots(figsize=(20,15))
+    barh_ax.barh(y, width)
+    barh_ax.set_title(title, size=20)
+    barh_ax.set_xlabel(xlabel, size=20)
+    barh_ax.set_ylabel(ylabel, size=20);
+    # barh_ax.set_tickparams(labelsize=18)
+    for i in barh_ax.patches:
+        if i.get_width() >0:
+            plt.text(i.get_width()+0.3, i.get_y()+0.4,
+                     str(round((i.get_width()), 2)),
+                     fontsize = 10, fontweight ='bold',
+                     color ='grey');
+        else:
+            pass
+    plt.show()
+    return
+
+if factor=='Cases':
+    choropleth_plot(recent_cases, 'No. of Cases \n September 2022')
+    st.plotly_chart(US_fig)
+
+    barh_fig=plt.figure(figsize=(20,15))
+    barh_ax=barh_fig.add_subplot(111)
+    barh_plot(recent_total['State'],recent_total['No. of Cases (Mean)'],
+            'Avg. No. of Cases \n September 2022', 'Count','State')
+    st.pyplot(barh_fig)
+
+# st.pyplot(US_fig)
+#fig.write_image('../Images/ACT_participation_rate_by_state.jpg')

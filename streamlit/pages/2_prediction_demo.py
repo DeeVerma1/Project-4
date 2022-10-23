@@ -6,11 +6,15 @@ import pandas as pd
 import pickle
 import numpy as np
 
-# st.set_page_config(page_title='Predictions!' )
+#Help from :
+# https://docs.streamlit.io/library/api-reference/media/st.image
+
+
+st.set_page_config(page_title='Predictions!', layout='wide' )
 
 st.title('Hospitalization Prediction Hah!')
-st.sidebar.success("Lets click!")
-
+st.subheader("Lets predict!")
+st.image('./pages/images/covid-19.png', width=100)
 
 X_train_dummies=pd.read_csv('./pages/models/X2_train_dummies.csv')
 X_train_dummies=X_train_dummies.iloc[:,0]
@@ -65,4 +69,36 @@ if st.button('Predict'):
     hosp_prob=model.predict_proba(df_dum)
     #Write out your prediction
     st.write(f"Go to the Doctor? {'Yes' if predicted_hosp==1 else 'No'}")
-    st.write(f'Probability of Hospitalization {np.round(hosp_prob[0][1],2)}')
+    st.write(f'Probability of Hospitalization {(np.round(hosp_prob[0][1],2))*100}%')
+
+
+
+###########################################################
+# Code adapted from
+# https://discuss.streamlit.io/t/how-do-i-use-a-background-image-on-streamlit/5067/5
+
+import base64
+
+# @st.cache(allow_output_mutation=True)
+def get_base64_of_bin_file(bin_file):
+    #reads png file
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+def set_png_as_page_bg(png_file):
+    #display png as background
+    bin_str = get_base64_of_bin_file(png_file)
+    page_bg_img = '''
+    <style>
+    st.App {
+    background-image: url("data:image/png;base64,%s");
+    background-size: cover;
+    }
+    </style>
+    ''' % bin_str
+
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+    return
+
+set_png_as_page_bg('./pages/images/covid-19.png')
