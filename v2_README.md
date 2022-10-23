@@ -45,11 +45,12 @@ We define success as identifying states that may need additional resources based
 
 3) "Data Dictionaries" folder containing:
 
-    - Text files of data dictionaries (see "Data Acquisition" section below for data source and description):
+    - Text files of data dictionaries (see "Data" section below for data source and description):
         - covid_deaths_data_dict.txt
         - covid_vacc_data_dict.txt
         - covid_surr_data_dict.txt
 
+4) stream lit folder
 
 ## The Data 
 
@@ -57,15 +58,15 @@ We define success as identifying states that may need additional resources based
 We used the following COVID-19 datasets from the Centers for Disease Control and Prevention (CDC) website for our analysis:
 
 
-* [`covid_cases_deaths_by_state_over_time.csv`](./data/United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv) | [data dictionary]("will add link to data dict once data dicts are uploaded to the main branch")
+* [`covid_cases_deaths_by_state_over_time.csv`](./data/United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv) | [data dictionary](https://github.com/DeeVerma1/Project-4/blob/main/Data%20Dictionaries/covid_deaths_data_dict.txt)
     - Description: This dataset contains archived aggregate daily counts of COVID-19 cases and deaths by state. The data covers the period from January 2020 to October 2022. Source: https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36
 
 
-* [`covid_vaccination_trends.csv`](./data/covid_vaccination_trends.csv) | [data dictionary]("will add link to data dict once data dicts are uploaded to the main branch")
+* [`covid_vaccination_trends.csv`](./data/covid_vaccination_trends.csv) | [data dictionary](https://github.com/DeeVerma1/Project-4/blob/main/Data%20Dictionaries/covid_vacc_data_dict.txt)
     - Description: Overall Trends in Number of COVID-19 Vaccinations in the US at national and jurisdictional levels. Data represents all vaccine partners including jurisdictional partner clinics, retail pharmacies, long-term care facilities, dialysis centers, Federal Emergency Management Agency and Health Resources and Services Administration partner sites, and federal entity facilities. The data covers the period from December 2020 to June 2022. Source: https://data.cdc.gov/Vaccinations/COVID-19-Vaccination-Trends-in-the-United-States-N/rh2h-3yt2
 
 
-* [`covid_surveillance.csv`](./data/covid_surveillance.csv) | [data dictionary]("will add link to data dict once data dicts are uploaded to the main branch") 
+* [`covid_surveillance.csv`](./data/covid_surveillance.csv) | [data dictionary](https://github.com/DeeVerma1/Project-4/blob/main/Data%20Dictionaries/covid_surr_data_dict.txt) 
     - Description: This case surveillance public use dataset has 19 elements for all COVID-19 cases shared with CDC and includes demographics, geography (county and state of residence), any exposure history, disease severity indicators and outcomes, and presence of any underlying medical conditions and risk behaviors. The data covers the period from March 2020 to September 2022. Source: https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4
 
 
@@ -87,7 +88,8 @@ To further aid resource allocation efforts, we also created models to predict th
 
 ## Findings/Recommendations
 
-- North Carolina and Texas experienced an uptick in new covid cases over the past three months and have the lowest and fifth lowest percentage of people with both a primary series and booster among all states, 28% and 39%, respectively, suggesting we should allocate additional anti-viral therapeutics to these two states, at least in the near-term, to prepare for any upticks in demand.
+- North Carolina experienced an uptick in new covid cases over the past months and have the lowest percentage of people with both a primary series and booster among all states, 28% suggesting we should allocate additional anti-viral therapeutics to these two states, at least in the near-term, to prepare for any upticks in demand.
+(include chloropeth map)
 
 - As is usually the case with time series predictions, accurately predicting new covid cases proved difficult, but was made moreso by our lack of additional features such as exongenous variables that could have improved accuracy. There are most likely hundreds of factors that contribute to new covid cases, and since we lack the domain knowledge and resources to create a truly comprehensive time series model, the model we did create will serve as the foundation for further exploration and refinement.
 
