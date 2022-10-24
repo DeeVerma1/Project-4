@@ -92,7 +92,7 @@ We posit that states with a recent uptick in new cases and a relatively low perc
 
 To further aid resource allocation efforts, we also created models to predict the number of new covid cases and identify factors most relevant to hospitalizations in the US in the short-term, which we can later fine-tune to apply to the state-wide level, particularly to those states assessed to need additional resources based on the criteria outlined above.
 
-- A time series model to predict new covid cases/deaths in the US. We check the autocorrelation and partial autocorrelation plot but since we could not find trends/seasonality on the data, this section will be introduced basically as experimental. We used ARIMA/SARIMA/SARIMAX/VAR/TimesGeneratorRNN Models to model and its performance is not good enough.The models can predict well just for the first legs (weeks) and after a while just predict the mean.
+- A time series model to predict new covid cases/deaths in the US. We check the autocorrelation and partial autocorrelation plot but since we could not find trends/seasonality on the data, this section will be introduced basically as experimental. We used ARIMA/SARIMA/SARIMAX/VAR/TimesGeneratorRNN Models to model and its performance is not good enough.The models can predict well just for the first legs (weeks) and after a while just predict the mean. According to some experts in epidemiology, in the future the covid will become seasonal like the flu and if that happens this model can be used for further analysis and predictions as well.
 
 ![This is an image](https://github.com/DeeVerma1/Project-4/blob/main/image/US%20Covid%20Cases%20Timeline%20-%20Moving%20Avarage.png))
 
