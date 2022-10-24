@@ -38,6 +38,7 @@ We define success as identifying states that may need additional resources based
      - Model Tuning jupyter notebook:
      
         - "03.3 - Model-Tuning-Surveillance.ipynb"
+        - "03.1 - Model Time Series.ipynb" 
 
 
 
