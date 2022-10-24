@@ -93,7 +93,8 @@ We posit that states with a recent uptick in new cases and a relatively low perc
 To further aid resource allocation efforts, we also created models to predict the number of new covid cases and identify factors most relevant to hospitalizations in the US in the short-term, which we can later fine-tune to apply to the state-wide level, particularly to those states assessed to need additional resources based on the criteria outlined above.
 
 - A time series model to predict new covid cases/deaths in the US. We check the autocorrelation and partial autocorrelation plot but since we could not find trends/seasonality on the data, this section will be introduced basically as experimental. We used ARIMA/SARIMA/SARIMAX/VAR/TimesGeneratorRNN Models to model and its performance is not good enough.The models can predict well just for the first legs (weeks) and after a while just predict the mean.
-![This is an image](./images/US Covid Cases Timeline - Moving Avarage.png)
+
+![This is an image](https://github.com/DeeVerma1/Project-4/blob/main/image/US%20Covid%20Cases%20Timeline%20-%20Moving%20Avarage.png))
 
 - Binary classification models to identify the extent to which factors, such as age, sex, race, and location (state), contribute to a person being hospitalized versus not hospitalized. We will try different classification techniques and look at the balanced accuracy and recall as our evaluation metrics with target >0.65 for each, especially recall because we'd rather err on the side of caution and hospitalize someone who we later find out to not have covid (false positive), rather than not hospitalize a person who we later find out to have covid.
 
