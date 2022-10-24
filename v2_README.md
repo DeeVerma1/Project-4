@@ -103,7 +103,7 @@ The choropleth plot below show colormap of number of cases in the states for Sep
  ![This is an image](./images/word_count_distn.png)
  
 The choropleth plot below show color map of percent of population with completed primary series and a booster as of June 2022.
- ![This is an image](./images/word_count_distn.png)
+ ![This is an image](https://github.com/DeeVerma1/Project-4/blob/main/image/pct_pop_prim_booster.jpg)
  
  From the plots above, North Carolina is one of the states with highest no. of cases and lowest percentage of vaccinated population.
 
