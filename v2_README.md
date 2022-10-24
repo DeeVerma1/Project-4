@@ -69,7 +69,7 @@ We used the following COVID-19 datasets from the Centers for Disease Control and
 * [`covid_surveillance.csv`](./data/covid_surveillance.csv) | [data dictionary](https://github.com/DeeVerma1/Project-4/blob/main/Data%20Dictionaries/covid_surr_data_dict.txt) 
     - Description: This case surveillance public use dataset has 19 elements for all COVID-19 cases shared with CDC and includes demographics, geography (county and state of residence), any exposure history, disease severity indicators and outcomes, and presence of any underlying medical conditions and risk behaviors. The data covers the period from March 2020 to September 2022. Source: https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4
 
-* [`US_Travel.csv`] too big to include on github | [data dictionary](https://github.com/DeeVerma1/Project-4/blob/main/Data%20Dictionaries/covid_travel_data_dict.txt) 
+* [`covid_travel.csv`] too big to include on github | [data dictionary](https://github.com/DeeVerma1/Project-4/blob/main/Data%20Dictionaries/covid_travel_data_dict.txt) 
     - Description: This dataset includes entries for travel information during Covid time. The travel statistics are produced from an anonymized national panel of mobile device data from multiple sources. All data sources used in the creation of the metrics contain no personal information. Data analysis is conducted at the aggregate national, state, and county levels. A weighting procedure expands the sample of millions of mobile devices, so the results are representative of the entire population in a nation, state, or county. Source: https://data.bts.gov/Research-and-Statistics/Trips-by-Distance/w96p-f2qv
 
 
