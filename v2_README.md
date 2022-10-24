@@ -97,7 +97,7 @@ To further aid resource allocation efforts, we also created models to predict th
 
 ## Findings/Recommendations
 
-- North Carolina experienced an uptick in new covid cases over the past months (471) and have the lowest percentage of people with both a primary series and booster among all states, 28% suggesting we should allocate additional anti-viral therapeutics to these two states, at least in the near-term, to prepare for any upticks in demand.
+- North Carolina experienced an uptick in new covid cases over the past months (471) and have the lowest percentage of people with both a primary series and booster among all states, 28% suggesting we should allocate additional anti-viral therapeutics to this state, at least in the near-term, to prepare for any upticks in demand.
 
 The choropleth plot below show colormap of number of cases in the states for Sept-2022.
  ![This is an image](./images/word_count_distn.png)
