@@ -56,7 +56,7 @@ We define success as identifying states that may need additional resources based
         - covid_vacc_data_dict.txt
         - covid_surr_data_dict.txt
 
-4) stream lit folder
+4) streamlit folder
 
 ## The Data 
 
@@ -117,6 +117,8 @@ The table below shows top 10 significant factors in determining hospitalization 
 
 It shows that the age groups 65+ year and 50-64 year and some of the locations like NJ and KS are among the five most significant factors that affect the hospitalization. This gives an insight on possible guiding factors in helping prepare for upcoming surges. For example, if someone is in age group 65+, they are 27 times (looking at the exp_coefficient) as likely to be hospitalized when compared to someone in 1-17 years age group. This suggests that the states/counties that have higher population in these age groups might need more resource allocations, support and preparations to prevent hospitalizations. The table also lists some of the states like New Jersey and Kensas indicating that there might be location specific factors, like population density, population's inclination towards getting vaccinated etc. that can be further analyzed to help guide the proper resource allocations. 
 
+## Streamlit App
+-A Streamlit app was create for visualization and exploration of the findings of this project.
 
 ## Potential Areas for Model Improvement
 - Classification model: add data to balance out the imbalanced classes, and other factors beyond age, race, sex, and location that might factor into a person's chances of being hospitalzed.
