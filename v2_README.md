@@ -103,7 +103,7 @@ To further aid resource allocation efforts, we also created models to predict th
 - North Carolina experienced an uptick in new covid cases over the past months (471) and have the lowest percentage of people with both a primary series and booster among all states, 28% suggesting we should allocate additional anti-viral therapeutics to this state, at least in the near-term, to prepare for any upticks in demand.
 
 The choropleth plot below show colormap of number of cases in the states for Sept-2022.
- ![This is an image](./images/word_count_distn.png)
+ ![This is an image](https://github.com/DeeVerma1/Project-4/blob/main/image/cases_map_sept2022.png)
  
 The choropleth plot below show color map of percent of population with completed primary series and a booster as of June 2022.
  ![This is an image](https://github.com/DeeVerma1/Project-4/blob/main/image/pct_pop_prim_booster.jpg)
@@ -116,7 +116,7 @@ The choropleth plot below show color map of percent of population with completed
 - Heavily imbalanced classes affected the performance of our logistic regression model to classify hospitalized versus not hospitalized even after applying undersampling techniques. Our baseline accuracy was 96% for the target variable. Our production model (Logistic Regression with Undersampling)  has a **Balanced Accuracy of 0.75** and **Recall of 0.75.**
   
 The table below shows top 10 significant factors in determining hospitalization of a patient.
-![This is an image](./images/word_count_distn.png)
+![This is an image](https://github.com/DeeVerma1/Project-4/blob/main/image/surv_model_coef.png)
 
 It shows that the age groups 65+ year and 50-64 year and some of the locations like NJ and KS are among the five most significant factors that affect the hospitalization. This gives an insight on possible guiding factors in helping prepare for upcoming surges. For example, if someone is in age group 65+, they are 27 times (looking at the exp_coefficient) as likely to be hospitalized when compared to someone in 1-17 years age group. This suggests that the states/counties that have higher population in these age groups might need more resource allocations, support and preparations to prevent hospitalizations. The table also lists some of the states like New Jersey and Kensas indicating that there might be location specific factors, like population density, population's inclination towards getting vaccinated etc. that can be further analyzed to help guide the proper resource allocations. 
 
