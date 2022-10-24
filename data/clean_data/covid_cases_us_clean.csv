@@ -1,4 +1,4 @@
-submission_date,state,tot_cases,new_case,tot_death,new_death
+Date,state,tot_cases,new_case,tot_death,new_death
 2020-01-22,AS,0,0,0,0
 2020-01-22,NYC,0,0,0,0
 2020-01-22,AL,0,0,0,0
