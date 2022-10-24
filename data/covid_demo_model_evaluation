@@ -1,2 +1,0 @@
-,model_no,comment,training_accuracy,testing_accuracy,f1score_train,f1score_test,balanced_accuracy,recall,precision
-0,4,KNN with SMOTEN,0.694055750823441,0.918983985206378,0.5299551691346285,0.2855384615384615,0.5914009851355683,0.20086580086580086,0.49361702127659574
